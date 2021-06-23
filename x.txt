@@ -1,0 +1,11 @@
+.nav-item:hover{
+  text-shadow: none;
+  outline: none;
+  line-height: 0.70em;
+  text-shadow: 0 0px 101px rgba(255, 255, 255, 0), 
+              0 0px 1.6px rgba(255, 255, 255, 0.237), 
+              0 0px 12.6px rgba(255, 255, 255, 0.436), 
+              0 0px 25.4px rgba(255, 255, 255, 0.673),  
+              0 0px 56.8px rgba(255, 255, 255, 0.771), 
+              0 0px 101px rgba(255, 255, 255, 1);
+}

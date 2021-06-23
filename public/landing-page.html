@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Dealer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" sizes="180x180" href="images/fav.png">
+</head>
+
+<body>
+
+    <header class="absolute bg-transparent z-10 uppercase font-body w-full flex flex-row items-center">
+        <div class="flex flex-row mt-5 ml-5">
+
+            <a href="" class="z-10">
+                <img src="images/logo.png" alt="logo">
+            </a>
+
+            <nav class="flex flex-row z-10 items-center md:ml-auto sm:flex-wrap">
+                <a href="#" class="nav-item ml-10 underline lg:text-2xl md:text-xl sm:text-lg text-white">Home</a>
+                <a href="#" class="nav-item ml-10 lg:text-2xl md:text-xl sm:text-lg text-white">Top Sellers</a>
+                <a href="#" class="nav-item ml-10 lg:text-2xl md:text-xl sm:text-lg text-white">New Releases</a>
+                <a href="#" class="nav-item ml-10 lg:text-2xl md:text-xl sm:text-lg text-white">Refurbished</a>
+                <a href="#" class="nav-item ml-10 lg:text-2xl md:text-xl sm:text-lg text-white">Consoles</a>
+            </nav>
+
+        </div>
+        <div class="text-gray-600 absolute right-40 mt-5">
+            <input type="search" name="serch" placeholder="Let's find what you're looking for" class="bg-white h-10 w-64 px-5 pr-10 rounded-full text-sm focus:outline-none">
+            <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+              <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"/>
+              </svg>
+            </button>
+        </div>
+
+        <button class="absolute bttn right-16 mt-5">
+            <span>
+                <img src="images/shopping-cart.png" alt="">
+            </span>
+        </button>
+    </header>
+
+    <section>
+
+        <img src="images/last-of-us-bg.jpg" class="w-min h-min md:w-min md:h-min top-0 left-0" alt="bg-1">
+        <img src="images/faded-bg.jpg" class="w-min h-min opacity-10 absolute top-0 -inset-x-1/3 right-0" alt="bg-2">
+
+        <img src="images/the-last-of-us-logo.png" class="absolute w-1/6 z-10 top-1/4 lg:left-72 md:left-48 sm:left-24" alt="the-last-of-us-logo">
+
+        
+        <div class="absolute w-1/2 bottom-28 flex flex-row left-1/2 z-10">
+            <hr class="w-32 m-4">
+            <p class="uppercase text-white text-3xl md:text-2xl sm:text-xl z-10 font-body">
+                No matter what, you keep finding something to fight for.
+            </p>
+        </div>
+
+        <img src="images/naughty-dog-logo.png" class="absolute w-48 h-max bottom-14 left-8" alt="naughty-dog-logo">
+        <img src="images/only-on-playstation.png" class="absolute w-48 h-max bottom-8 left-8" alt="only-on-playstation">
+
+    </section>
+
+    <section id="top-games">
+        <div class="flex flex-col p-10">
+
+            <p class="text-3xl text-gray-800 font-body mr-5">Best Sellers
+                <span>
+                    <img class="inline ml-3" src="images/down-arrow.png" alt="">
+                </span>
+            </p>
+            
+            <div class="text-gray-600 body-font">
+                <div class="container py-5 mx-auto">
+                  <div class="flex flex-wrap-m-4">
+
+                    <div class="pr-8 pt-5 md:w-1/3 thumb1">
+                      <div class="h-full rounded-lg overflow-hidden">
+                        <img class="object-cover rounded-lg object-center" src="images/forza.jpg" alt="blog">
+                        <div class="pt-6">
+                          <h1 class="title-font text-lg font-medium text-yellow-600 mb-3">Forza 5</h1>
+                          <div class="flex items-center flex-wrap justify-between">
+                            <p class="text-gray-900">69.99$
+                                <span class="m-2 items-center">
+                                    <img class="inline" src="images/star.png" alt="">
+                                    <img class="inline ml-1" src="images/star.png" alt="">
+                                    <img class="inline ml-1" src="images/star.png" alt="">
+                                    <img class="inline ml-1" src="images/star.png" alt="">
+                                    <img class="inline ml-1" src="images/star.png" alt="">
+                                </span>
+                            </p>
+                            <a href="#" class="inline-flex mr-5 mb-5 items-center md:mb-2 lg:mb-0">
+                                <span class="">
+                                    <img src="images/add-to-basket.png" alt="">
+                                </span>
+                              <!-- <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                              </svg> -->
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="pr-8 pt-5 md:w-1/3 thumb2">
+                        <div class="h-full rounded-lg overflow-hidden">
+                            <img class="object-cover rounded-lg object-center" src="images/gta5.jpg" alt="blog">
+                            <div class="pt-6">
+                                <h1 class="title-font text-lg font-medium text-green-500 mb-3">Grand Theft Auto V</h1>
+                                <div class="flex items-center flex-wrap justify-between">
+                                    <p class="text-gray-900">49.99$
+                                        <span class="m-2 items-center">
+                                            <img class="inline" src="images/star.png" alt="">
+                                            <img class="inline ml-1" src="images/star.png" alt="">
+                                            <img class="inline ml-1" src="images/star.png" alt="">
+                                            <img class="inline ml-1" src="images/star.png" alt="">
+                                            <img class="inline ml-1" src="images/star.png" alt="">
+                                        </span>
+                                    </p>
+                                    <a href="#" class="inline-flex mr-5 mb-5 items-center md:mb-2 lg:mb-0">
+                                        <span class="">
+                                            <img src="images/add-to-basket.png" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="pr-8 pt-5 md:w-1/3 thumb3">
+                        <div class="h-full rounded-lg overflow-hidden">
+                          <img class="object-cover rounded-lg object-center" src="images/spider.jpg" alt="blog">
+                          <div class="pt-6">
+                            <h1 class="title-font text-lg font-medium text-red-600 mb-3">SpiderMan</h1>
+                            <div class="flex items-center flex-wrap justify-between">
+                                <p class="text-gray-900">59.99$
+                                    <span class="m-2 items-center">
+                                        <img class="inline" src="images/star.png" alt="">
+                                        <img class="inline ml-1" src="images/star.png" alt="">
+                                        <img class="inline ml-1" src="images/star.png" alt="">
+                                        <img class="inline ml-1" src="images/star.png" alt="">
+                                        <img class="inline ml-1" src="images/star.png" alt="">
+                                    </span>
+                                </p>
+                                <a href="#" class="inline-flex mr-5 mb-5 items-center md:mb-2 lg:mb-0">
+                                    <span class="">
+                                        <img src="images/add-to-basket.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                </div>
+        </div>
+    </section>
+
+
+    <section id="new-games">
+        <div class="flex flex-col p-10">
+
+            <p class="text-3xl text-gray-800 font-body mr-5">Out Now
+                <span>
+                    <img class="inline ml-3" src="images/down-arrow.png" alt="">
+                </span>
+            </p>
+            
+            <div class="text-gray-600 body-font">
+                <div class="container py-5 mx-auto">
+                  <div class="flex flex-wrap-m-4">
+
+                    <div class="pr-8 pt-5 md:w-1/3 thumb4">
+                      <div class="h-full rounded-lg overflow-hidden">
+                        <img class="object-cover rounded-lg object-center" src="images/resident-evil.jpg" alt="blog">
+                        <div class="pt-6">
+                          <h1 class="title-font text-lg font-medium text-indigo-600 mb-3">Resident Evil: Village</h1>
+                          <div class="flex items-center flex-wrap justify-between">
+                            <p class="text-gray-900">89.99$
+                                <span class="m-2 items-center">
+                                    <img class="inline" src="images/star.png" alt="">
+                                    <img class="inline ml-1" src="images/star.png" alt="">
+                                    <img class="inline ml-1" src="images/star.png" alt="">
+                                    <img class="inline ml-1" src="images/star.png" alt="">
+                                    <img class="inline ml-1" src="images/half-star.png" alt="">
+                                </span>
+                            </p>
+                            <a href="#" class="inline-flex mr-5 mb-5 items-center md:mb-2 lg:mb-0">
+                                <span class="">
+                                    <img src="images/add-to-basket.png" alt="">
+                                </span>
+                            </a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="pr-8 pt-5 md:w-1/3 thumb5">
+                        <div class="h-full rounded-lg overflow-hidden">
+                            <img class="object-cover rounded-lg object-center" src="images/hitman.png" alt="blog">
+                            <div class="pt-6">
+                                <h1 class="title-font text-lg font-medium text-red-500 mb-3">HitMan 3</h1>
+                                <div class="flex items-center flex-wrap justify-between">
+                                    <p class="text-gray-900">69.99$
+                                        <span class="m-2 items-center">
+                                            <img class="inline" src="images/star.png" alt="">
+                                            <img class="inline ml-1" src="images/star.png" alt="">
+                                            <img class="inline ml-1" src="images/star.png" alt="">
+                                            <img class="inline ml-1" src="images/star.png" alt="">
+                                            <img class="inline ml-1" src="images/half-star.png" alt="">
+                                        </span>
+                                    </p>
+                                    <a href="#" class="inline-flex mr-5 mb-5 items-center md:mb-2 lg:mb-0">
+                                        <span class="">
+                                            <img src="images/add-to-basket.png" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="pr-8 pt-5 md:w-1/3 thumb6">
+                        <div class="h-full rounded-lg overflow-hidden">
+                          <img class="object-cover rounded-lg object-center" src="images/halo.jpg" alt="blog">
+                          <div class="pt-6">
+                            <h1 class="title-font text-lg font-medium text-yellow-800 mb-3">Halo: Infinite</h1>
+                            <div class="flex items-center flex-wrap justify-between">
+                                <p class="text-gray-900">79.99$
+                                    <span class="m-2 items-center">
+                                        <img class="inline" src="images/star.png" alt="">
+                                        <img class="inline ml-1" src="images/star.png" alt="">
+                                        <img class="inline ml-1" src="images/star.png" alt="">
+                                        <img class="inline ml-1" src="images/half-star.png" alt="">
+                                    </span>
+                                </p>
+                                <a href="#" class="inline-flex mr-5 mb-5 items-center md:mb-2 lg:mb-0">
+                                    <span class="">
+                                        <img src="images/add-to-basket.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                </div>
+        </div>
+    </section>
+
+    <section id="new-games">
+        <div class="flex flex-col p-10">
+
+            <p class="text-3xl text-gray-800 font-body mr-5">Consoles
+                <span class="icon">
+                    <img class="inline ml-3" src="images/down-arrow.png" alt="">
+                </span>
+            </p>
+            
+            <div class="text-gray-600 body-font">
+                <div class="container py-5 mx-auto">
+                  <div class="flex flex-wrap-m-4">
+
+                    <div class="pr-8 pt-5 md:w-1/3 thumb7">
+                      <div class="h-full rounded-lg overflow-hidden">
+                        <img class="object-cover rounded-lg object-center" src="images/ps5.jpg" alt="blog">
+                        <div class="pt-6">
+                          <h1 class="title-font text-lg font-medium text-blue-900 mb-3">PlayStation 5</h1>
+                          <div class="flex items-center flex-wrap justify-between">
+                            <p class="text-gray-900">499.99$
+                                <span class="m-2 items-center">
+                                    <img class="inline" src="images/star.png" alt="">
+                                    <img class="inline ml-1" src="images/star.png" alt="">
+                                    <img class="inline ml-1" src="images/star.png" alt="">
+                                    <img class="inline ml-1" src="images/star.png" alt="">
+                                    <img class="inline ml-1" src="images/star.png" alt="">
+                                </span>
+                            </p>
+                            <a href="#" class="inline-flex mr-5 mb-5 items-center md:mb-2 lg:mb-0">
+                                <span class="">
+                                    <img src="images/add-to-basket.png" alt="">
+                                </span>
+                            </a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="pr-8 pt-5 md:w-1/3 thumb8">
+                        <div class="h-full rounded-lg overflow-hidden">
+                            <img class="object-cover rounded-lg object-center" src="images/xbox.png" alt="blog">
+                            <div class="pt-6">
+                                <h1 class="title-font text-lg font-medium text-green-800 mb-3">Xbox Series 5</h1>
+                                <div class="flex items-center flex-wrap justify-between">
+                                    <p class="text-gray-900">499.99$
+                                        <span class="m-2 items-center">
+                                            <img class="inline" src="images/star.png" alt="">
+                                            <img class="inline ml-1" src="images/star.png" alt="">
+                                            <img class="inline ml-1" src="images/star.png" alt="">
+                                            <img class="inline ml-1" src="images/star.png" alt="">
+                                            <img class="inline ml-1" src="images/half-star.png" alt="">
+                                        </span>
+                                    </p>
+                                    <a href="#" class="inline-flex mr-5 mb-5 items-center md:mb-2 lg:mb-0">
+                                        <span class="">
+                                            <img src="images/add-to-basket.png" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="pr-8 pt-5 md:w-1/3 thumb9">
+                        <div class="h-full rounded-lg overflow-hidden">
+                          <img class="object-cover rounded-lg object-center" src="images/nintendo.jpeg" alt="blog">
+                          <div class="pt-6">
+                            <h1 class="title-font text-lg font-medium text-gray-400 mb-3">Nintendo Switch UP</h1>
+                            <div class="flex items-center flex-wrap justify-between">
+                                <p class="text-gray-900">299.99$
+                                    <span class="m-2 items-center">
+                                        <img class="inline" src="images/star.png" alt="">
+                                        <img class="inline ml-1" src="images/star.png" alt="">
+                                        <img class="inline ml-1" src="images/star.png" alt="">
+                                        <img class="inline ml-1" src="images/star.png" alt="">
+                                        <img class="inline ml-1" src="images/half-star.png" alt="">
+                                    </span>
+                                </p>
+                                <a href="#" class="inline-flex mr-5 mb-5 items-center md:mb-2 lg:mb-0">
+                                    <span class="">
+                                        <img src="images/add-to-basket.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+    <footer class="text-gray-600 font-body border-t-2 border-gray-800">
+        <div class="container flex items-center justify-between sm:flex-row flex-col m-4">
+          <a class="flex font-body items-center md:justify-start justify-between">
+            <img class="h-2/3" src="images/logo_black.jpg" alt="">
+          </a>
+          <p class="text-xl text-gray-800 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2020 Game Dealer
+
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <div class="wrapper">
+                <div class="icon facebook text-blue-600">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </div>
+                <div class="icon twitter text-blue-400">
+                    <div class="tooltip">Twitter</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                </div>
+                <div class="icon instagram text-purple-500">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </div>
+                <div class="icon github text-gray-800">
+                    <div class="tooltip">Github</div>
+                    <span><i class="fab fa-github"></i></span>
+                </div>
+                <div class="icon youtube text-red-700">
+                    <div class="tooltip">Youtube</div>
+                    <span><i class="fab fa-youtube"></i></span>
+                </div>
+            </div>
+        
+            <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+          </span>
+        </div>
+      </footer>
+
+    <script src="js/anime.min.js"></script>
+    <script>
+
+        var button = document.querySelector(".bttn");
+
+
+        function animateBtn(scale, duration, elasticity) {
+            anime.remove(button);
+            anime({
+                targets: button,
+                scale: scale,
+                duration: duration,
+                elasticity: elasticity
+            });
+        }
+
+        function enterBtn(){ animateBtn(1.1, 800, 400) };
+        function leaveBtn(){ animateBtn(1.0, 600, 300) };
+
+        button.addEventListener('mouseenter', enterBtn, false);
+        button.addEventListener('mouseleave', leaveBtn, false);
+
+        var img1 = document.querySelector(".thumb1");
+
+
+        function animateImg1(scale, duration, elasticity) {
+            anime.remove(img1);
+            anime({
+                targets: img1,
+                scale: scale,
+                duration: duration,
+                elasticity: elasticity
+            });
+        }
+
+        function enterImg1(){ animateImg1(1.1, 800, 400) };
+        function leaveImg1(){ animateImg1(1.0, 600, 300) };
+
+        img1.addEventListener('mouseenter', enterImg1, false);
+        img1.addEventListener('mouseleave', leaveImg1, false);
+
+        var img1 = document.querySelector(".thumb1");
+
+
+        function animateImg1(scale, duration, elasticity) {
+            anime.remove(img1);
+            anime({
+                targets: img1,
+                scale: scale,
+                duration: duration,
+                elasticity: elasticity
+            });
+        }
+
+        function enterImg1(){ animateImg1(1.1, 800, 400) };
+        function leaveImg1(){ animateImg1(1.0, 600, 300) };
+
+        img1.addEventListener('mouseenter', enterImg1, false);
+        img1.addEventListener('mouseleave', leaveImg1, false);
+
+        var img2 = document.querySelector(".thumb2");
+
+        function animateImg2(scale, duration, elasticity) {
+            anime.remove(img2);
+            anime({
+                targets: img2,
+                scale: scale,
+                duration: duration,
+                elasticity: elasticity
+            });
+        }
+
+        function enterImg2() { animateImg2(1.1, 800, 400) };
+        function leaveImg2() { animateImg2(1.0, 600, 300) };
+
+        img2.addEventListener('mouseenter', enterImg2, false);
+        img2.addEventListener('mouseleave', leaveImg2, false);
+
+        var img3 = document.querySelector(".thumb3");
+
+        function animateImg3(scale, duration, elasticity) {
+            anime.remove(img3);
+            anime({
+                targets: img3,
+                scale: scale,
+                duration: duration,
+                elasticity: elasticity
+            });
+        }
+
+        function enterImg3() { animateImg3(1.1, 800, 400) };
+        function leaveImg3() { animateImg3(1.0, 600, 300) };
+
+        img3.addEventListener('mouseenter', enterImg3, false);
+        img3.addEventListener('mouseleave', leaveImg3, false);
+
+
+        var img4 = document.querySelector(".thumb4");
+
+        function animateImg4(scale, duration, elasticity) {
+            anime.remove(img4);
+            anime({
+                targets: img4,
+                scale: scale,
+                duration: duration,
+                elasticity: elasticity
+            });
+        }
+
+        function enterImg4(){ animateImg4(1.1, 800, 400) };
+        function leaveImg4(){ animateImg4(1.0, 600, 300) };
+
+        img4.addEventListener('mouseenter', enterImg4, false);
+        img4.addEventListener('mouseleave', leaveImg4, false);
+
+        var img5 = document.querySelector(".thumb5");
+
+        function animateImg5(scale, duration, elasticity) {
+            anime.remove(img5);
+            anime({
+                targets: img5,
+                scale: scale,
+                duration: duration,
+                elasticity: elasticity
+            });
+        }
+
+        function enterImg5() { animateImg5(1.1, 800, 400) };
+        function leaveImg5() { animateImg5(1.0, 600, 300) };
+
+        img5.addEventListener('mouseenter', enterImg5, false);
+        img5.addEventListener('mouseleave', leaveImg5, false);
+
+        var img6 = document.querySelector(".thumb6");
+
+        function animateImg6(scale, duration, elasticity) {
+            anime.remove(img6);
+            anime({
+                targets: img6,
+                scale: scale,
+                duration: duration,
+                elasticity: elasticity
+            });
+        }
+
+        function enterImg6() { animateImg6(1.1, 800, 400) };
+        function leaveImg6() { animateImg6(1.0, 600, 300) };
+
+        img6.addEventListener('mouseenter', enterImg6, false);
+        img6.addEventListener('mouseleave', leaveImg6, false);
+
+        var img7 = document.querySelector(".thumb7");
+
+        function animateImg7(scale, duration, elasticity) {
+            anime.remove(img7);
+            anime({
+                targets: img7,
+                scale: scale,
+                duration: duration,
+                elasticity: elasticity
+            });
+        }
+
+        function enterImg7() { animateImg7(1.1, 800, 400) };
+        function leaveImg7() { animateImg7(1.0, 600, 300) };
+
+        img7.addEventListener('mouseenter', enterImg7, false);
+        img7.addEventListener('mouseleave', leaveImg7, false);
+
+        var img8 = document.querySelector(".thumb8");
+
+        function animateImg8(scale, duration, elasticity) {
+            anime.remove(img8);
+            anime({
+                targets: img8,
+                scale: scale,
+                duration: duration,
+                elasticity: elasticity
+            });
+        }
+
+        function enterImg8() { animateImg8(1.1, 800, 400) };
+        function leaveImg8() { animateImg8(1.0, 600, 300) };
+
+        img8.addEventListener('mouseenter', enterImg8, false);
+        img8.addEventListener('mouseleave', leaveImg8, false);
+
+        var img9 = document.querySelector(".thumb9");
+
+        function animateImg9(scale, duration, elasticity) {
+            anime.remove(img9);
+            anime({
+                targets: img9,
+                scale: scale,
+                duration: duration,
+                elasticity: elasticity
+            });
+        }
+
+        function enterImg9() { animateImg9(1.1, 800, 400) };
+        function leaveImg9() { animateImg9(1.0, 600, 300) };
+
+        img9.addEventListener('mouseenter', enterImg9, false);
+        img9.addEventListener('mouseleave', leaveImg9, false);
+
+        // $(function(){
+        //     $('.viewer1').mouseover(function(){
+        //         var $viewer1 = $(this);
+        //         $viewer1.find('.thumb1').hide();
+        //         $viewer1.find('.video1').show()[0].play();
+        //     }).mouseleave(function(){
+        //         var $viewer1 = $(this);
+        //         $viewer1.find('.thumb1').show();;
+        //         $viewer1.find('.video1').hide()[0].pause();
+        //     });
+        // });
+
+
+
+    </script>
+</body>
+</html>
