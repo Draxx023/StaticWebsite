@@ -343,10 +343,9 @@
     <footer class="text-gray-600 font-body border-t-2 border-gray-800">
         <div class="container flex items-center justify-between sm:flex-row flex-col m-4">
           <a class="flex font-body items-center md:justify-start justify-between">
-            <img class="h-2/3" src="images/logo_black.jpg" alt="">
+            <img class="h-2/3" src="images/logo_black.png" alt="">
           </a>
           <p class="text-xl text-gray-800 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2020 Game Dealer
-
           </p>
           <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <div class="wrapper">
@@ -374,6 +373,9 @@
         
             <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
           </span>
+          <a href="contact.html">
+            <p class="text-xl bttn2 text-gray-800 sm:mr-4 sm:p-4 sm:border-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4 hover:bg-gray-800 hover:border-white hover:text-white">Contact Us
+          </a>
         </div>
       </footer>
 
@@ -398,6 +400,24 @@
 
         button.addEventListener('mouseenter', enterBtn, false);
         button.addEventListener('mouseleave', leaveBtn, false);
+
+        var button2 = document.querySelector(".bttn2");
+
+        function animateBtn2(scale, duration, elasticity) {
+            anime.remove(button2);
+            anime({
+                targets: button2,
+                scale: scale,
+                duration: duration,
+                elasticity: elasticity
+            });
+        }
+
+        function enterBtn2(){ animateBtn2(1.1, 800, 400) };
+        function leaveBtn2(){ animateBtn2(1.0, 600, 300) };
+
+        button2.addEventListener('mouseenter', enterBtn2, false);
+        button2.addEventListener('mouseleave', leaveBtn2, false);
 
         var img1 = document.querySelector(".thumb1");
 
